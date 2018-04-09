@@ -9,6 +9,7 @@ print ("计算结果 25+42/7=",25+42/float(number))
 #格式化输出
 my_height = 74 
 print ("我的身高: %d" %(my_height))
+print("{:,}".format(12345678))#输出123,456
 
 filename = argv
 print ("当前文件位置：",filename)
