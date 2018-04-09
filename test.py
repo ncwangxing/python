@@ -1,5 +1,6 @@
 #2018-04-09 13:20
 from sys import argv
+#参数的使用
 number=7
 print ("Hello World! \n计算题：",end='')
 print ("计算结果 25+42/7=",25+42/float(number))
