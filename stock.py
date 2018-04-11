@@ -5,7 +5,7 @@ print (d)
 e = ts.get_hist_data('601318',start='2017-06-23',end='2017-06-26')  
 print (e) 
 
-#每5秒取一次股票数据，并在上证指数高于3100点，或601318低于49元时提醒。
+#每5秒取一次股票数据，并在上证指数高于3200点，或601318低于49元时提醒。
 import os  
 import time  
 import tushare as ts  
@@ -22,7 +22,7 @@ def check(code, low, high):
         return False  
       
 while True:  
-    if check('sh', 3100, 10000) or check('601318',0,49):  
+    if check('sh', 3200, 10000) or check('601318',0,49):  
         #os.system('play bell.wav')  
         print ("检测报警！！！！")
         exit()  
